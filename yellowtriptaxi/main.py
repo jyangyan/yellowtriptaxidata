@@ -63,11 +63,11 @@ class yellow_trip(object):
 
         print("Data loaded successfully into SQL Server.")
 
-    def execute_sp(self):
+    # def execute_sp(self):
 
 
 if __name__ == "__main__":
     yellow_data = yellow_trip()
-    # yellow_data.download_data()
+    yellow_data.download_data()
     # yellow_data.load_data()
 
