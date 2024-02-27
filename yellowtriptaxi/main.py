@@ -1,12 +1,11 @@
 import requests
 import os
-from bs4 import BeautifulSoup
 import pyarrow.parquet as pq
 import configparser
 import pandas as pd
+from bs4 import BeautifulSoup
 from sqlalchemy import create_engine
-import pyodbc
-from sqlalchemy import text  # Import the text function for handling raw SQL
+from sqlalchemy import text
 
 class yellow_trip(object):
     def __init__(self):
