@@ -69,7 +69,7 @@ class yellow_trip(object):
         conn_str = f'mssql+pyodbc://{self.server}/{self.database}?trusted_connection={self.trusted_connection}&driver={self.driver}'
         engine = create_engine(conn_str)
 
-        sql_file_path = self.sql_file_path  # Corrected part
+        sql_file_path = self.sql_file_path
 
         with open(sql_file_path, 'r') as file:
             sql_script = file.read()
