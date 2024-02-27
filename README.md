@@ -51,7 +51,9 @@ the resulting view table.
 ## Process Flow Diagram 
 
 
-<H3> Sample Visualization  </H3>
-1. Link > folder
-2. Sample Visualization
+## Sample Visualization
 
+1. [Link for pbix report](file:///C:/Users/Samae/PycharmProjects/pythonProject/yellowtriptaxi/visualization/yellow_trip_data.pbix)
+2. Sample Visualization for the total amount per day. 
+
+![Sample Visualization](file:///C:/Users/Samae/PycharmProjects/pythonProject/yellowtriptaxi/visualization/ttl_amount_per_day.png)
