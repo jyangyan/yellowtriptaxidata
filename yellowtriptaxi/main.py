@@ -5,6 +5,8 @@ import pyarrow.parquet as pq
 import configparser
 import pandas as pd
 from sqlalchemy import create_engine
+import pyodbc
+from sqlalchemy import text  # Import the text function for handling raw SQL
 
 class yellow_trip(object):
     def __init__(self):
@@ -20,7 +22,7 @@ class yellow_trip(object):
         self.driver = config['SQL']['driver']
         self.parquet_file_path = config['SQL']['parquet_file_path']
         self.table_name = config['SQL']['table_name']
-
+        self.sql_file_path = config['SQL']['sql_file_path']
 
     def download_data(self):
 
@@ -63,11 +65,26 @@ class yellow_trip(object):
 
         print("Data loaded successfully into SQL Server.")
 
-    # def execute_sp(self):
+    def execute_sp(self):
+
+        conn_str = f'mssql+pyodbc://{self.server}/{self.database}?trusted_connection={self.trusted_connection}&driver={self.driver}'
+        engine = create_engine(conn_str)
+
+        sql_file_path = self.sql_file_path  # Corrected part
+
+        with open(sql_file_path, 'r') as file:
+            sql_script = file.read()
+
+        with engine.connect() as conn:
+            sp_query = text(sql_script)
+            conn.execute(sp_query)
+
+        print("Stored procedure executed successfully.")
 
 
 if __name__ == "__main__":
     yellow_data = yellow_trip()
     yellow_data.download_data()
-    # yellow_data.load_data()
+    yellow_data.load_data()
+    yellow_data.execute_sp()
 
