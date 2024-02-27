@@ -51,15 +51,16 @@ The flowchart illustrates the progression
 from initial data processing through output generation to visualization for reporting. Pay close attention to the critical details.
 
 
-![Sample Visualization](file:///C:\Users\Samae\PycharmProjects\pythonProject\yellowtriptaxi\Docs\yellowtrip_processflow.png)
+![Sample Visualization](yellowtriptaxi/Docs/yellowtrip_processflow.png)
 
 
 ## Sample Visualization
 
-1. [Link for pbix report](file:///C:/Users/Samae/PycharmProjects/pythonProject/yellowtriptaxi/visualization/yellow_trip_data.pbix)
+1. [Link for pbix report](yellowtriptaxi/visualization/yellow_trip_data.pbix)
 
-2. [Data Dictionary](file:///C:/Users/Samae/PycharmProjects/pythonProject/yellowtriptaxi/Docs/data_dictionary_trip_records_yellow.pdf)
+2. [Data Dictionary](yellowtriptaxi/Docs/data_dictionary_trip_records_yellow.pdf)
 
 3. Sample Visualization for the total amount per day. 
 
-![Sample Visualization](file:///C:/Users/Samae/PycharmProjects/pythonProject/yellowtriptaxi/visualization/ttl_amount_per_day.png)
+![Sample Visualization](yellowtriptaxi/visualization/ttl_amount_per_day.png)
+
