@@ -30,10 +30,11 @@ Requirements and Dependency to install with pycharm IDE
 1. Begin by installing PyCharm as your integrated development environment (IDE) for running the Python script.
 2. Within the PyCharm IDE, configure the Python environment. Typically, this process will automatically install necessary components; please be patient until it completes.
 3. Install SQL Server.
-4. Configure your database.
-5. Refer to the SQL Scripts folder for guidance on creating new tables with the same data format.
-6. After completing all setup steps, update the `config.ini` file according to the SQL server name.
-7. Execute the main Python script.
+4. COnfigure your ODBC
+5. Configure your database.
+6. Refer to the SQL Scripts folder for guidance on creating new tables with the same data format.
+7. After completing all setup steps, update the `config.ini` file according to the SQL server name.
+8. Execute the main Python script.
 
 
 ## Discussion 
