@@ -13,7 +13,8 @@ accuracy of these data.
 ## Set-up instruction 
 1. Install Pycharm IDE
 2. Install SQL Server
-3. Install Power BI Desktop
+3. Set-up ODBC
+4. Install Power BI Desktop
 
 Requirements and Dependency to install with pycharm IDE
 1. pip install requests beautifulsoup4
